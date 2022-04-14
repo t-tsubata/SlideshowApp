@@ -13,6 +13,7 @@
 		6E95B46328055EC400B09609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E95B46128055EC400B09609 /* Main.storyboard */; };
 		6E95B46528055EC500B09609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E95B46428055EC500B09609 /* Assets.xcassets */; };
 		6E95B46828055EC500B09609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E95B46628055EC500B09609 /* LaunchScreen.storyboard */; };
+		6E95B4782807ACAB00B09609 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E95B4772807ACAB00B09609 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6E95B46428055EC500B09609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E95B46728055EC500B09609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E95B46928055EC500B09609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E95B4772807ACAB00B09609 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				6E95B45B28055EC400B09609 /* AppDelegate.swift */,
 				6E95B45D28055EC400B09609 /* SceneDelegate.swift */,
 				6E95B45F28055EC400B09609 /* ViewController.swift */,
+				6E95B4772807ACAB00B09609 /* ZoomViewController.swift */,
 				6E95B46128055EC400B09609 /* Main.storyboard */,
 				6E95B46428055EC500B09609 /* Assets.xcassets */,
 				6E95B46628055EC500B09609 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				6E95B46028055EC400B09609 /* ViewController.swift in Sources */,
 				6E95B45C28055EC400B09609 /* AppDelegate.swift in Sources */,
 				6E95B45E28055EC400B09609 /* SceneDelegate.swift in Sources */,
+				6E95B4782807ACAB00B09609 /* ZoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
