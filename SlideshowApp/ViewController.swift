@@ -77,12 +77,15 @@ final class ViewController: UIViewController {
     /// <#Description#>
     /// - Parameter sender: <#sender description#>
     @IBAction func tapAction(_ sender: Any) {
-        timer.invalidate()
-        timer = nil
-        playStopButton.setTitle("再生", for:.normal)
-        nextButton.isEnabled = true
-        backButton.isEnabled = true
-        performSegue(withIdentifier: "result", sender: nil)
+        if (timer == nil) {
+            performSegue(withIdentifier: "result", sender: nil)
+        } else {
+            timer.invalidate()
+            timer = nil
+            playStopButton.setTitle("再生", for:.normal)
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+        }
     }
     
     /// <#Description#>
