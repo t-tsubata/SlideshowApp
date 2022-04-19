@@ -20,29 +20,30 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        //let imageView = images[0]
         imageView.image = images[0]
     }
     
     /// <#Description#>
     /// - Parameter sender: <#sender description#>
     @IBAction func nextImage(_ sender: UIButton) {
-        if imageIndex == 3 {
+        imageIndex += 1
+
+        if imageIndex > images.count - 1 {
             imageIndex = 0
-        } else {
-            imageIndex += 1
         }
+
         imageView.image = images[imageIndex]
     }
     
     /// <#Description#>
     /// - Parameter sender: <#sender description#>
     @IBAction func backImage(_ sender: UIButton) {
-        if imageIndex == 0 {
-            imageIndex = 3
-        } else {
-            imageIndex -= 1
+        imageIndex -= 1
+
+        if 0 > imageIndex {
+            imageIndex = images.count - 1
         }
+
         imageView.image = images[imageIndex]
     }
     
