@@ -69,9 +69,7 @@ final class ViewController: UIViewController {
     ///   - segue: <#segue description#>
     ///   - sender: <#sender description#>
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // segueから遷移先のResultViewControllerを取得する
         let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
-        // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
         zoomViewController.image = images[imageIndex]
     }
     
