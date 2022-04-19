@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -77,18 +76,16 @@
                             <constraint firstItem="K9t-fz-81F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="icI-PA-hh2"/>
                             <constraint firstItem="4gc-4n-TfM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vCS-MM-oqw"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="QHL-Ci-FHO" appends="YES" id="Z1f-vZ-tf8"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="K9t-fz-81F" id="b92-2U-yDT"/>
-                        <outlet property="image" destination="4gc-4n-TfM" id="emp-ej-HlB"/>
+                        <outlet property="imageView" destination="4gc-4n-TfM" id="emp-ej-HlB"/>
                         <outlet property="nextButton" destination="Sih-dU-iLN" id="13m-LR-uDk"/>
                         <outlet property="playStopButton" destination="FSy-5c-moM" id="ZLJ-pW-22Y"/>
                         <segue destination="0Jj-5r-ngX" kind="show" identifier="result" id="3OL-CN-Lwu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="QHL-Ci-FHO">
                     <connections>
                         <action selector="tapAction:" destination="BYZ-38-t0r" id="eDd-C9-XSA"/>
@@ -108,8 +105,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JEH-RH-bB4">
                                 <rect key="frame" x="7" y="245.66666666666663" width="400" height="225"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="PHa-VH-UnY"/>
-                                    <constraint firstAttribute="height" constant="225" id="ug9-XV-Ocx"/>
+                                    <constraint firstAttribute="width" constant="400" id="JJM-iN-y21"/>
+                                    <constraint firstAttribute="height" constant="225" id="kdC-kF-Tdn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-32-Ncz">
@@ -132,7 +129,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="H9f-dY-hiQ"/>
                     <connections>
-                        <outlet property="image" destination="JEH-RH-bB4" id="Xst-dr-qDe"/>
+                        <outlet property="imageView" destination="JEH-RH-bB4" id="Xst-dr-qDe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V9f-C9-Lcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

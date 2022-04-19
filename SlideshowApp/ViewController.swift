@@ -8,7 +8,7 @@
 import UIKit
 
 final class ViewController: UIViewController {
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var playStopButton: UIButton!
@@ -20,8 +20,8 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let imageView = images[0]
-        image.image = imageView
+        //let imageView = images[0]
+        imageView.image = images[0]
     }
     
     /// <#Description#>
@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
         } else {
             imageIndex += 1
         }
-        image.image = images[imageIndex]
+        imageView.image = images[imageIndex]
     }
     
     /// <#Description#>
@@ -43,7 +43,7 @@ final class ViewController: UIViewController {
         } else {
             imageIndex -= 1
         }
-        image.image = images[imageIndex]
+        imageView.image = images[imageIndex]
     }
     
     /// <#Description#>
@@ -71,7 +71,7 @@ final class ViewController: UIViewController {
         // segueから遷移先のResultViewControllerを取得する
         let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
         // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
-        zoomViewController.imageIndex = imageIndex
+        zoomViewController.image = images[imageIndex]
     }
     
     /// <#Description#>
@@ -84,7 +84,9 @@ final class ViewController: UIViewController {
         playStopButton.setTitle("再生", for:.normal)
         nextButton.isEnabled = true
         backButton.isEnabled = true
+        
         performSegue(withIdentifier: "result", sender: nil)
+        
     }
     
     /// <#Description#>
